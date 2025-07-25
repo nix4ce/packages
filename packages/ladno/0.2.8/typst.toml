@@ -1,0 +1,42 @@
+[package]
+name = "ladno"
+version = "0.2.8"
+entrypoint = "src/lib.typ"
+authors = ["Alexander Zhuravlev <nix4ce@gmail.com>"]
+license = "MIT"
+description = "A template for RTU MIREA."
+repository = "https://github.com/nix4ce/ladno"
+keywords = [
+    "university",
+    "document",
+    "russian",
+    "RTU MIREA",
+    "MIREA"
+]
+categories = [
+    "report",
+    "scripting"
+]
+disciplines = [
+    "education",
+    "engineering"
+]
+compiler = "0.13.1"
+exclude = [
+    "tests/main.typ",
+    "docs",
+    "docs/*",
+    "assets",
+    "tests",
+    "tests/*",
+    "examples",
+    "examples/*",
+    "scripts",
+    "scripts/*",
+    "cliff.toml",
+]
+
+[template]
+path = "template"
+entrypoint = "main.typ"
+thumbnail = "assets/thumbnail.png"
